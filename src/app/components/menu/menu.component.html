@@ -1,0 +1,10 @@
+<p>
+    <mat-toolbar>
+      <span>Application d'initiation au développement avec MEAN Stack</span>
+    </mat-toolbar>
+  </p>
+  <button mat-stroked-button color="Primary" (click)="displayAllContacts()">List des contacts</button>
+  <button mat-stroked-button color="Primary" (click)=openDialogCreateContact()>Créer un contact</button>
+  <div id="list-contact" *ngIf="isListContactsClicked">
+    <app-contact-list></app-contact-list>
+</div>

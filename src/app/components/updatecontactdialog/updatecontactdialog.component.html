@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Mettre à jout un contact</h1>
+<div mat-dialog-content>
+  <p>Numéro de téléphone</p>
+  <mat-form-field>
+    <mat-label>Numéro de téléphone</mat-label>
+    <input matInput [(ngModel)]="data.num_tel">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Prénom</mat-label>
+    <input matInput [(ngModel)]="data.prenom">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>nom</mat-label>
+    <input matInput [(ngModel)]="data.nom">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Rejeter</button>
+  <button mat-button (click)="updateContactRow()">Ok</button>
+</div>
